@@ -27,9 +27,9 @@ def TellWhich(AllT2Pd, ETMinDis, AllTRev, ElgTRev):
     NTL = []    # NEAREST TAXI LIST
     for i in range(len(AllT2Pd)):                            #> NEAREST
         if AllT2Pd[i] != "!Elg" and AllT2Pd[i] == ETMinDis:  #>         DISTANCE
-            NTL.append(i+1)                                  #>                  BASED TAXI FILLTER
+            NTL.append(i+1)                                  #>                  BASED TAXI FILTER
 
-    if len(NTL) >= 2:                                        #> REVENUE BASED TAXI FILLTER
+    if len(NTL) >= 2:                                        #> REVENUE BASED TAXI FILTER
         for j in NTL:                                       
             ElgTRev.append(Taxi[j]["Rev"])                  
         NT = AllTRev.index(min(ElgTRev)) + 1
@@ -110,3 +110,4 @@ for i in range(1,Tp+1):   # PASSENGER REQUIRMENT PROCESSING UNIT #
 
 # THIS CODE WAS WRITTEN BY KANISHKUMAR S 2nd-YEAR EEE AT SAIRAM COLLEGE(CHENNAI)
 # IT'S A MINI PROJECT GIVEN IN SKILLRACK AT LEVEL 6 DIVISION
+
