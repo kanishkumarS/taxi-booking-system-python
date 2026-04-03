@@ -31,4 +31,4 @@ This project is a simulation of a taxi booking system built using Python. It all
 1. Install Python
 2. Run the script:
 ```bash
-python filename.py
+python MINI TAXI ALLOCATION SYSTEM.py
